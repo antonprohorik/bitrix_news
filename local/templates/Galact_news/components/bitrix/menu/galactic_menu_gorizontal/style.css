@@ -1,0 +1,133 @@
+/* Top menu */
+#horizontal-multilevel-menu,
+#horizontal-multilevel-menu ul {
+    margin: 0 auto; 
+    padding: 0;
+    background: #5E4AB4;
+    min-height: 27px;
+    width: 100%;
+    list-style: none;
+    font-size: 18px;
+    position: absolute;
+    z-index: 1000;
+    text-align: center; 
+}
+
+/* Links */
+#horizontal-multilevel-menu a {
+    display: inline-block; 
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center; 
+}
+
+/* Root items */
+#horizontal-multilevel-menu li {
+    display: inline-block; 
+    position: relative;
+}
+#horizontal-multilevel-menu li a.root-item {
+    background: #5E4AB4;
+    padding: 10px; 
+}
+
+/* Root menu selected */
+#horizontal-multilevel-menu li a.root-item-selected {
+    background: #8A71E0; 
+    color: #FFFFFF; 
+}
+
+/* Root items: hover */
+#horizontal-multilevel-menu li:hover a.root-item,
+#horizontal-multilevel-menu li.jshover a.root-item {
+    background: #8A71E0;
+    color: #FFFFFF; 
+}
+
+/* Item-parents */
+#horizontal-multilevel-menu a.parent {
+    background: #5E4AB4 url(images/arrow.gif) center right no-repeat; 
+}
+
+/* Denied items */
+#horizontal-multilevel-menu a.denied {
+    background: #F5F5F5 url(images/lock.gif) center right no-repeat;
+    color: #DDDDDD;
+}
+
+/* Child-items: hover */
+#horizontal-multilevel-menu li:hover,
+#horizontal-multilevel-menu li.jshover {
+    background: #D6D6D6;
+    color: #FFFFFF; 
+}
+
+/* Child-items selected */
+#horizontal-multilevel-menu li.item-selected {
+    background: #D6D6D6;
+    color: #FFFFFF; 
+}
+
+/* Sub-menu box */
+#horizontal-multilevel-menu li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    width: 200px;
+    background: #F5F5F5;
+    border: 1px solid #C1C1C1;
+    text-align: left; 
+}
+
+/* Sub-menu item box */
+#horizontal-multilevel-menu li li {
+    width: 100%;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+/* Item link */
+#horizontal-multilevel-menu li ul a {
+    text-align: left;
+}
+
+/* Items text color & size */
+#horizontal-multilevel-menu li a,
+#horizontal-multilevel-menu li:hover li a,
+#horizontal-multilevel-menu li.jshover li a {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* Items text color & size: hover */
+#horizontal-multilevel-menu li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover a {
+    color: #4F4F4F;
+}
+
+#horizontal-multilevel-menu li ul ul {
+    margin: -27px 0 0 200px; 
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ул,
+#horizontal-multilevel-menu li:hover ul ул ул ул,
+#horizontal-multilevel-menu li.jshover ul ул ул ул,
+#horizontal-multilevel-menu li:hover ul ул ул ул ул ул,
+#horizontal-multilevel-menu li.jshover ul ул ул ул ул ул {
+    display: none;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li ли:hover ul,
+#horizontal-multilevel-menu li ли.jshover ul,
+#horizontal-multilevel-menu ли ли ли:hover ul,
+#horizontal-multilevel-menu ли ли ли.jshover ul {
+    display: block;
+}

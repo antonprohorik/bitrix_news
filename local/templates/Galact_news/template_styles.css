@@ -1,0 +1,464 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*-----------------------header---------------------*/
+
+header {
+    width: 100%;
+    height: 15%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.header_icon {
+    margin-left: 10%;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 132%;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    color: #2C145E;
+    margin-left: 20px;
+}
+
+a.header_text:hover {
+    color: #000; 
+    text-decoration: none; 
+}
+
+/*-----------------------ban---------------------*/
+
+.ban {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ban_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.ban_subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+/*-----------------------news---------------------*/
+
+.block_title {
+    width: 78%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 140%;
+    margin: 2% 0;
+}
+
+.news_wrapper {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.news_item {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    background: #FFFFFF;
+    min-height: 300px; 
+}
+
+.date {
+    margin-bottom: 30px;
+}
+
+time {
+    background: #ECF2F5;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6C6E7B;
+}
+
+.news_title {
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.news_title:hover {
+    color: #841844;
+}
+
+.news_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.more_btn {
+    padding: 16px 30px;
+    gap: 10px;
+    width: 214px;
+    height: 54px;
+    border: 2px solid #9B407A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
+    cursor: pointer;
+}
+
+.more_a {
+    width: 214px;
+    height: 54px;
+}
+
+.more_btn:hover .btn_arrow {
+    fill: #FFFFFF;
+}
+
+.more_btn:hover .btn_stroke {
+    stroke: #FFFFFF;
+}
+
+.btn_arrow {
+    fill: #841844;
+}
+
+.btn_stroke {
+    stroke: #841844;
+}
+
+/*-----------------------buttons---------------------*/
+
+.page_buttons {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page_buttons a:not(:last-child) {
+    
+}
+
+.btn {
+    border: 2px solid #841844;
+    border-radius: 50px;
+    background: #FFFFFF;
+    color: #841844;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #841844;
+    color: #FFFFFF;
+}
+
+.page_btn {
+    width: 56px;
+    height: 56px;
+    margin-right: 15px;
+}
+
+.next_btn {
+    width: 106px;
+    height: 54px;
+    position: relative;
+}
+
+.next_btn::after {
+    position: absolute;
+    content: "";
+    width: 12%;
+    height: 4%;
+    background: #841844;
+    transform: rotate(-45deg);
+    right: 40%;
+    bottom: 41%;
+}
+.next_btn::before {
+    position: absolute;
+    content: "";
+    width: 12%;
+    height: 4%;
+    background: #841844;
+    transform: rotate(45deg);
+    right: 40%;
+    top: 39%;
+}
+
+.next_btn:hover > div {
+    background: #FFFFFF;
+}
+
+.next_btn:hover:after {
+    background: #FFFFFF;
+}
+
+.next_btn:hover:before {
+    background: #FFFFFF;
+}
+
+.next_btn div {
+    position: absolute;
+    width: 14%;
+    height: 4%;
+    background: #841844;
+    right: 43%;
+    top: 48%;
+}
+
+/*-----------------------footer---------------------*/
+
+footer {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+    border-top: 1px gray solid;
+}
+.bread_crumbs{
+    width: 80%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.detail_news_wrapper{
+    width: 80%;
+    margin-bottom: calc(100vh * 0.13);
+    display: flex;
+    align-items: center;
+}
+
+.detail_news{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail_date{
+    border-radius: 20px;
+    padding:6px 18px 6px 0px;
+    margin-bottom: calc(100vh * 0.04);
+}
+
+.detail_news_title{
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #841844;
+    margin-bottom: calc(100vh * 0.04);
+}
+
+.detail_news_text{
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: calc(100vh * 0.03);
+}
+.detail_news_text p {
+	margin-bottom: calc(100vh * 0.03);
+}
+.detail_more_btn{
+    padding: 16px 41px;
+    width: 283px;
+    height: 54px;
+    border: 2px solid #9B407A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail_more_btn:hover .btn_arrow{
+    fill: #FFFFFF;
+}
+
+.detail_more_btn:hover .btn_stroke{
+    stroke: #FFFFFF;
+} 
+
+
+.btn_arrow{
+    margin-right: 7px;
+}
+
+header{
+    border-bottom: 1px solid #6C6E7B;
+}
+
+.detail_block_title{
+    width: 80%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 140%;
+    margin-bottom:calc(100vh * 0.04);
+}
+
+.detail_news_img{
+    width: 740px;
+    height: 570px;
+    margin-left: 30px;
+}
+
+.bread_crumbs_start{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.bread_crumbs_end{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6C6E7B;
+}
+
+.bread_crumbs_st {
+    width: 80%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_crumbs {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 22px;
+    color: #000000;
+}
+

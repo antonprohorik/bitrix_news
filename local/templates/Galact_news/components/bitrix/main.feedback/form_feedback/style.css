@@ -1,0 +1,65 @@
+div.mfeedback {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    width: 60%; /* Adjust width as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mfeedback-form {
+    display: inline-block;
+    text-align: left;
+}
+
+.mf-name,
+.mf-email,
+.mf-message {
+    margin-bottom: 1em;
+}
+
+.mf-text {
+    font-weight: bold;
+}
+
+.mf-req {
+    color: red;
+}
+
+.mf-ok-text {
+    color: green;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+/* Style for error messages */
+.mf-error {
+    color: red;
+    margin-bottom: 1em;
+}
+
+/* Style for inputs and textarea */
+.mfeedback input[type="text"],
+.mfeedback textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+/*Style for submit button */
+.mfeedback input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

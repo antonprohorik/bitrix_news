@@ -1,0 +1,132 @@
+ul#vertical-multilevel-menu, #vertical-multilevel-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 214px;
+    font-size: 14px; /* Увеличен размер шрифта для пунктов меню */
+}
+
+/* Submenu box */
+#vertical-multilevel-menu li ul {
+    position: absolute;
+    top: auto;
+    left: 13px; /* Изменено на левое расположение подпунктов */
+    display: none;
+    z-index: 500;
+    height: auto;
+    border: 1px solid #C1C1C1;
+    border-bottom: none;
+    width: 200px;
+}
+
+/* Submenu Items */
+#vertical-multilevel-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF; /* Белый текст */
+    font-weight: bold;
+    padding: 10px; /* Увеличен padding для более толстого вида пунктов меню */
+    background: #2C145E; /* Новый цвет фона - глубокий фиолетовый */
+    border-bottom: 1px solid #C1C1C1;
+}
+
+/* Items selected */
+#vertical-multilevel-menu li a.item-selected {
+    background-color: #6A1B9A; /* Светлее фиолетовый для выделенного пункта */
+}
+
+/* Items Hover */
+#vertical-multilevel-menu li a:hover {
+    background-color: #6A1B9A; /* Светлее фиолетовый при наведении */
+}
+
+/* Rootmenu Items */
+#vertical-multilevel-menu a.root-item {
+    color: #FFFFFF; /* Белый текст */
+    font-weight: bold;
+    font-size: 13px; /* Увеличен размер шрифта */
+    padding: 10px 0 12px 35px; /* Увеличен padding */
+    background: #2C145E; /* Новый цвет фона */
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Rootmenu Items hover */
+#vertical-multilevel-menu a.root-item:hover, #vertical-multilevel-menu a.root-item-selected:hover {
+    background: #6A1B9A; /* Светлее фиолетовый при наведении */
+}
+
+/* Rootmenu Items Selected */
+#vertical-multilevel-menu a.root-item-selected {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px; /* Увеличен размер шрифта */
+    padding: 10px 0 12px 35px; /* Увеличен padding */
+    background: #6A1B9A; /* Светлее фиолетовый для выделенного пункта */
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Parent item */
+#vertical-multilevel-menu a.parent {
+    background: #2C145E url(images/arrow.gif) center right no-repeat; /* Новый цвет фона */
+    padding-right: 10px;
+}
+
+/* Denied items */
+#vertical-multilevel-menu a.denied {
+    background: #F5F5F5 url(images/lock.gif) center right no-repeat;
+    color: #DDDDDD;
+    padding-right: 10px;
+}
+
+/* Holly Hack. IE Requirement \*/
+* html ul#vertical-multilevel-menu li {
+    float: left;
+    height: 1%;
+}
+* html ul#vertical-multilevel-menu li a {
+    height: 1%;
+}
+/* End */
+
+/* Submenu margin */
+#vertical-multilevel-menu li ul.root-item {
+    margin: -27px 0 0 -214px; /* Изменено на левое расположение подпунктов */
+}
+
+#vertical-multilevel-menu li ul {
+    margin: -27px 0 0 -214px; /* Изменено на левое расположение подпунктов */
+}
+
+/* Submenu hide */
+#vertical-multilevel-menu li:hover ul ul,
+#vertical-multilevel-menu li.jsvhover ul ul,
+#vertical-multilevel-menu li:hover ul ul ul,
+#vertical-multilevel-menu li.jsvhover ul ul ul {
+    display: none;
+}
+
+/* Submenu show */
+#vertical-multilevel-menu li:hover ul,
+#vertical-multilevel-menu li.jsvhover ul,
+#vertical-multilevel-menu li li:hover ul,
+#vertical-multilevel-menu li li.jsvhover ul,
+#vertical-multilevel-menu li li li:hover ul,
+#vertical-multilevel-menu li li li.jsvhover ul {
+    display: block;
+}
+
+/* Position the menu */
+#vertical-multilevel-menu {
+    position: absolute;
+    top: 20px; /* Позиционирование на 20 пикселей ниже */
+    right: 10px; /* Позиционирование справа сверху */
+    background: #FFFFFF; /* Фон меню */
+    border: 1px solid #C1C1C1;
+    padding: 10px;
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}

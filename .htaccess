@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+#  URL для новостей по темам
+RewriteRule ^news/theme/([0-9]+)$ /news/index.php?theme=$1 [L,QSA]
+
+# Перенаправление для детальных новостей
+RewriteRule ^news/([0-9]{2}.[0-9]{2}.[0-9]{4})/([^/]+)/?$ /news/detail.php?DATE_OF_FUTURE=$1&CODE=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [L]
